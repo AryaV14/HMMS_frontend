@@ -1,23 +1,49 @@
 
-import fakeData from "./History.json";
+
 import * as React from "react";
 import { useTable } from "react-table";
+import {useState,useEffect} from "react";
 
 function App() {
-  const data = React.useMemo(() => fakeData, []);
+  const [Data, setData] = useState([]);
+  useEffect(() => {
+    
+    const getHistBy = () => {
+      fetch("http://127.0.0.1:5000/mess_hist", {
+        method: "Post",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          hostelid: sessionStorage.getItem("key"),
+        }),
+      }).then((response) => {
+        response.json().then((data) => {
+          console.log(data)
+          setData(Data)
+          
+        });
+      });
+    };
+    
+
+    getHistBy();
+    }, []);
+    
+  const data = React.useMemo(() => Data, []);
   const columns = React.useMemo(
     () => [
       {
         Header: "SL.NO",
-        accessor: "id",
+        accessor: "hostel_id",
       },
       {
         Header: "MESSOUT",
-        accessor: "outdate",
+        accessor: "messout_date",
       },
       {
         Header: "MESSIN",
-        accessor: "indate",
+        accessor: "messin_date",
       },
       {
         Header: "DAYS",

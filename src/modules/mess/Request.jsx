@@ -25,15 +25,29 @@ const Request = ({ messMode }) => {
         "days":message,
       }),
     }).then((response) => {
-      response.json().then((data) => {
-        console.log(data);
-        
-        
-      });
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      if (data.status === 200) {
+        alert("Request submitted successfully");
+      } else if (data.status === 410) {
+        // show a alert
+        alert("User already in messout");
+      }
+      else
+      {
+        alert("Please enter valid details");
+      }
+    })
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation:", error);
     });
+};
 
-      setMessage('');
-    };
 
   return (
     <div className='reqbox'>
