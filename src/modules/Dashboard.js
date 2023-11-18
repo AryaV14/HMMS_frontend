@@ -18,10 +18,13 @@ export default function Dashboard() {
       }),
     }).then((response) => {
       response.json().then((data) => {
-        // console.log(data);
+        console.log(data);
         setList(data);
         
-        sessionStorage.setItem("username",data[0][10]);
+        if(data.length===0)
+          sessionStorage.setItem("username","No Name");
+        else
+          sessionStorage.setItem("username",data[0][10]);
         
       });
     });

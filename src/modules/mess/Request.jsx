@@ -9,9 +9,29 @@ const Request = ({ messMode }) => {
   
     const handleChange = (event) => {
       setMessage(event.target.value);
+      
     };
-  
+    
     const submit = () => {
+      fetch("http://127.0.0.1:5000/messreq", {
+      method: "Post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        "hostel_id":sessionStorage.getItem("key"),
+        "messmode":messMode,
+        "date":new Date(date).toLocaleDateString(),
+        "days":message,
+      }),
+    }).then((response) => {
+      response.json().then((data) => {
+        console.log(data);
+        
+        
+      });
+    });
+
       setMessage('');
     };
 

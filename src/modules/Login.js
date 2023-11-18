@@ -24,9 +24,9 @@ const logusesr = () => {
       })
       .then((data) => {
         console.log(data.key);
-        sessionStorage.setItem("key",data.key);
+        sessionStorage.clear();
         if (data.status === 200) {
-          // Redirect to home page
+          sessionStorage.setItem("key",data.key);
           window.location.href = "/home";
         } else {
           alert("Invalid username or password ");

@@ -27,7 +27,7 @@ export default function Reg(props) {
       .then((data) => {
         console.log(data);
         if (data.status === 200) {
-          window.location.href = "/login";
+          window.location.href = "/";
         } else if (data.status === 404) {
           // show a alert
           alert("User already exists");
