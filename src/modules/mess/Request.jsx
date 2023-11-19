@@ -61,10 +61,7 @@ const Request = ({ messMode }) => {
 
                     </div>
                     
-                    <div className='days'>
-                        <h5>Total Days:</h5>
-                        <input type="text" placeholder='No.of Days' value={message} onChange={handleChange} required />
-                    </div>
+                    
                     <div className='submit'>
                         <button onClick={submit}>SUBMIT</button>
                     </div>

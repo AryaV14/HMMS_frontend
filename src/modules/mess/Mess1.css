@@ -1,10 +1,13 @@
-
+.body{
+    background-color: rgba(158, 136, 136, 0.2);
+}
 .inout{
     padding-left:10%;
     padding-top: 15px;
     height: 100vh;
     margin-top: 10%;
     margin-left: 13.5%;
+    
 }
 .req{
    
@@ -47,6 +50,7 @@
     margin-top: 20px;
     box-shadow: -1px 1px 5px;
     border: none;
+    background-color: white;
 }
 .reqbox h2{
     display: flex;
@@ -138,6 +142,7 @@
     padding: 5px;
     font-weight: 500;
     color: red;
+    background-color: white;
 
 }
 .guideline h3{
@@ -158,7 +163,7 @@
     overflow-y: scroll;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-   /*background-color: aqua;*/
+ 
   }
   table {
     width: 100%;
@@ -166,13 +171,13 @@
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    
+    background-color: white;
    
   }
   th,
   td {
     padding: 15px;
-    background-color: rgba(158, 136, 136, 0.2);
+   
     color: #120101;
     
   }

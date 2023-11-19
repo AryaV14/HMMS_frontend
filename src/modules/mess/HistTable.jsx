@@ -4,7 +4,7 @@ import * as React from "react";
 import { useTable } from "react-table";
 import {useState,useEffect} from "react";
 
-function App() {
+function HistTable() {
   const [Data, setData] = useState([]);
   useEffect(() => {
     
@@ -18,9 +18,9 @@ function App() {
           hostelid: sessionStorage.getItem("key"),
         }),
       }).then((response) => {
-        response.json().then((data) => {
-          console.log(data)
-          setData(Data)
+        response.json().then((data1) => {
+          console.log(data1)
+          setData(data1)
           
         });
       });
@@ -30,12 +30,13 @@ function App() {
     getHistBy();
     }, []);
     
-  const data = React.useMemo(() => Data, []);
+    const data = React.useMemo(() => Data, [Data]);
+
   const columns = React.useMemo(
     () => [
       {
         Header: "SL.NO",
-        accessor: "hostel_id",
+        accessor: "id",
       },
       {
         Header: "MESSOUT",
@@ -60,7 +61,7 @@ function App() {
   return (
     
       <div className="container">
-        <h3>Messin and Messout History</h3>
+        <h3 >Messin and Messout History</h3>
         <table {...getTableProps()}>
           <thead>
             {headerGroups.map((headerGroup) => (
@@ -91,4 +92,4 @@ function App() {
   );
 }
 
-export default App;
+export default HistTable;
