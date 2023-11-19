@@ -45,7 +45,7 @@ function Mess1() {
 
 
     return (
-        <div>
+        <div className='body'>
 
             <div className='inout' >
                 <h2>You are {mess.mode} Now</h2>
