@@ -6,7 +6,7 @@ export default function Login() {
 const logusesr = () => {
   const hostelid=document.getElementById("hostel_id").value;
   const password=document.getElementById("password").value;
-  fetch("http://127.0.0.1:5000/userlog", {
+  fetch("https://hmms-backend.onrender.com/userlog", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

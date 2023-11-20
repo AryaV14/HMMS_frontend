@@ -13,7 +13,7 @@ const Request = ({ messMode }) => {
     };
     
     const submit = () => {
-      fetch("http://127.0.0.1:5000/messreq", {
+      fetch("https://hmms-backend.onrender.com/messreq", {
       method: "Post",
       headers: {
         "Content-Type": "application/json",

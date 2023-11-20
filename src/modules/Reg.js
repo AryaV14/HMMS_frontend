@@ -8,7 +8,7 @@ export default function Reg(props) {
     console.log(hostelid);
     console.log(password);
 
-    fetch("http://127.0.0.1:5000/userreg", {
+    fetch("https://hmms-backend.onrender.com/userreg", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

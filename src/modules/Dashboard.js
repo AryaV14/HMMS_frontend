@@ -8,7 +8,7 @@ export default function Dashboard() {
   useEffect(() => {
     
   const getListBy = () => {
-    fetch("http://127.0.0.1:5000/dash", {
+    fetch("https://hmms-backend.onrender.com/dash", {
       method: "Post",
       headers: {
         "Content-Type": "application/json",

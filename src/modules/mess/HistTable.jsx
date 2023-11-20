@@ -9,7 +9,7 @@ function HistTable() {
   useEffect(() => {
     
     const getHistBy = () => {
-      fetch("http://127.0.0.1:5000/mess_hist", {
+      fetch("https://hmms-backend.onrender.com/mess_hist", {
         method: "Post",
         headers: {
           "Content-Type": "application/json",
