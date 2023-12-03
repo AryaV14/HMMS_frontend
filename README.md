@@ -1,5 +1,8 @@
-### Hostel Mess Management System
+
+# Hostel Management System
+
 ## Overview
+
 This project aims to streamline hostel mess operations by providing a comprehensive management system. It consists of a React frontend for user interaction, a PSQL database for data storage, and a Flask backend built with Python to handle server-side operations.
 
 ## Features
@@ -30,27 +33,30 @@ psycopg2
 ## Installation
 1. Clone the repository:
 
-bash
+```bash
 
 git clone https://github.com/your-username/hostel-mess-management.git
+```
 
 2. Install dependencies:
 
 bash
-Copy code
+```bash
 cd hostel-mess-management
+```
 npm install
-Configure the MongoDB connection in the backend/config/db.js file.
+
 3. Start the backend server:
 
-bash
-Copy code
+```bash
+
 npm run start-server
+````
 4. Start the frontend:
 
-bash
-Copy code
+```bash
 npm start
+```
 Open your browser and visit http://localhost:3000 to view the application.
 
 
