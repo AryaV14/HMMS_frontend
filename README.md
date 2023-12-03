@@ -39,12 +39,8 @@ This project aims to streamline hostel mess operations by providing a comprehens
 git clone https://github.com/AryaV14/HMMS_frontend.git
 ```
 
-3. Install dependencies
+2. Install dependencies
 
-```bash
-
-npm install
-```
 3. Start the backend server
   
 5. Start the frontend:
