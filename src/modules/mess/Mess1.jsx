@@ -53,7 +53,8 @@ function Mess1() {
                 <div className='req'>
                     <button className='inreq' onClick={messout} >MESSOUT</button>
                     <button className='outreq' onClick={messin}>MESSIN</button>
-                    <FaRegStickyNote className='guide-icon' onClick={guideline} />
+                    <button className='guide' onClick={guideline}>GUIDELINES</button>
+                    {/* <FaRegStickyNote className='guide-icon' onClick={guideline} /> */}
                     {open && <Request messMode={mess.mode} />}
 
                 </div>

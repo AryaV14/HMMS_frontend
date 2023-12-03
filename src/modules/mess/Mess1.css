@@ -1,66 +1,105 @@
 .body{
-    background-color: #E2E8F0;
+    background-color: white;
 }
 .inout{
-    padding-left:10%;
+    /* padding-left:10%; */
     padding-top: 15px;
-    height: 100vh;
+    height: 90vh;
     margin-top: 10%;
-    margin-left: 13.5%;
+    /* margin-left: 13.5%; */
     
 }
+.inout h2{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.inout h4{
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20%;
+}
+
 .req{
-   
-    padding: 10px;
+    
+    padding-top: 30px;
+    padding-left: 20%;
     height: 70px;
 }
 .inreq{
+    
     padding: 8px;
-    font-size: 18px;
+    font-size: 15px;
     margin-right: 10px;
-    background-color: gra;
-    border-radius: 10px;
-    box-shadow: -1px 1px 5px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 4px;
+    border:none;
+    /* box-shadow: -1px 1px 5px; */
     outline: none;
-    border: none;
+    border-bottom: 2px solid black;
     
 }
 .inreq:hover{
-    background-color: rgb(189, 186, 186);
+    background-color: #e6e6e6;
 }
 .outreq{
     padding: 8px;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 600;
     margin-right: 10px;
-    background-color:gra;
-    border-radius: 10px;
-    box-shadow: -1px 1px 5px;
-    border: none;
+    background-color:white;
+    border-radius: 4px;
+    /* box-shadow: -1px 1px 5px; */
+    border:none;
+    border-bottom :2px solid black;
     outline: none;
     
 }
 .outreq:hover{
-    background-color: rgb(189, 186, 186);
+    background-color: #e6e6e6;
+}
+
+.guide{
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+    background-color:white;
+    border-radius: 4px;
+    border:none;
+    /* box-shadow: -1px 1px 5px; */
+    border-bottom:2px solid black;
+    
+    outline: none;
+}
+.guide:hover{
+    background-color: #e6e6e6;
 }
 
 .reqbox{
-    border: solid 1px;
-    padding: 10px;
+    padding: 30px;
+    text-align: left;
     width: 60%;
     margin-top: 20px;
-    box-shadow: -1px 1px 5px;
-    border: none;
-    background-color: white;
+    /* box-shadow: -1px 1px 5px; */
+    /* border:2px solid black; */
+    border-radius: 5px;
+    background-color: #f3f3f3;
 }
 .reqbox h2{
     display: flex;
-    justify-content: center;
-    font-weight: 600;
+    padding-bottom: 20px;
+    font-size: 28px;
+    justify-content: left;
+    font-weight: 800;
     
 }
 .reqbox p{
-    color: red;
-    font-weight: 700;
+    color: #858585;
+    font-weight: 500;
+    padding-bottom: 10px;
 }
 .calender1{
     display: flex;
@@ -96,31 +135,32 @@
 }
 .submit{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     padding: 10px;
     
 }
 .submit button{
     padding: 5px 13px;
-    border-radius: 10px;
-    background-color: gra;
+    border-radius: 5px;
+    background-color: rgb(66, 66, 66);
+    color: white;
     outline: none;
-    border: none;
-    font-size: 20px;
-    font-weight: 500;
-    box-shadow: -1px 1px 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 600;
+    /* box-shadow: -1px 1px 5px; */
 }
 .submit button:hover{
-    background-color: rgb(189, 186, 186);
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 .hist{
     padding-left: 25%;
     padding-right: 5%;
     padding-bottom: 5%;
-    margin-left: 10%;
-   
-    padding-top: 20%;
+    margin-left: 20%;
+    padding-top: 6%;
 }
 /*.history{
     display: flex;
@@ -132,34 +172,39 @@
     overflow: scroll;
 }
 */
+
+
 .guideline{
     position: absolute;
-    top: 32%;
+    top: 35%;
     right: 3%;
     margin-top: 5%;
-    width: 26%;
-    box-shadow: -1px 1px 5px black;
-    padding: 5px;
-    font-weight: 500;
-    color: red;
-    background-color: white;
+    width: 25%;
+    /* box-shadow: -1px 1px 5px black; */
+    
+    padding: 40px;
+    font-weight: 400;
+    color: #313131;
+    /* color:red; */
+    background-color: #f3f3f3;
 
 }
 .guideline h3{
+    font-size: 25px;
     color: black;
     
 }
-.guide-icon{
+/* .guide-icon{
     width: 40px;
     height: 40px;
-    color: rgb(153, 141, 141);
-}
+    color: rgb(61, 61, 61);
+} */
 
 .container {
     position: relative;
-    top: 50%;
-    left: 30%;
-    max-height: 600px;
+    /* top: 50%; */
+    /* left: 30%; */
+    max-height: 500px;
     overflow-y: scroll;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -171,7 +216,7 @@
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: hsl(0, 0%, 97%);
    
   }
   th,

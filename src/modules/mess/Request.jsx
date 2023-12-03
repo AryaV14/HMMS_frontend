@@ -53,7 +53,7 @@ const Request = ({ messMode }) => {
     <div className='reqbox'>
       
                     <h2>{messMode === 'MESSOUT' ? 'MESSOUT' : 'MESSIN'}</h2>
-                    <p>NB:Please read the Guidelines before you submit the request
+                    <p>NB : Please read the Guidelines before you submit the request
                     </p>
                     <div className='calender1'>
                         <h3>FROM:</h3>
