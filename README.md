@@ -17,8 +17,8 @@ This project aims to streamline hostel mess operations by providing a comprehens
 - Frontend: React.js
 - Backend: Flask, Python
 - Database: PSQL
-- Getting Started
 
+#  Getting Started
 ## Prerequisites 
 
 ### frontend
