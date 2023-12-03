@@ -1,7 +1,8 @@
 .dashboard {
-  background-color: #E2E8F0;
+  /* background-color: #E2E8F0; */
+  background-color: rgb(255, 255, 255);
   min-height: 100vh;
-  padding-top: 16vh;
+  padding-top: 5vh;
 
   display: flex;
   justify-content: space-around;
@@ -9,17 +10,18 @@
 }
 
 .dash-div {
-  background-image: linear-gradient(90deg, #0ea5e9 6px, white 1px);
+  /* background-image: linear-gradient(90deg, #0f0 6px, white 1px); */
+  border-left: 5px solid #333333;
   box-shadow: 3px 3px 5px #0004;
-  padding: 30px;
-  width: 26vw;
+  padding: 25px;
+  width: 28vw;
   border-radius: 5px;
-
+  
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .dash-tile {
@@ -39,6 +41,7 @@
 }
 
 .dash-tile>.value {
-  font-size: 18px;
+  font-size:18px;
   font-weight: 500;
+  color:#333333;
 }

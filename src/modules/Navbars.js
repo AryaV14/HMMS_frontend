@@ -32,9 +32,9 @@ const Navbars = () => {
   return (
     <div className="head-nav">
       <div className="head-left">
-        <div style={{ color: 'blue', fontSize: '18px', fontWeight: 'bold' }}>Hey there,</div>
+        <div style={{ color: 'white', fontSize: '16px', fontWeight: 600 }}>Hey there,</div>
         
-        <div style={{ color: 'blue', fontSize: '18px', fontWeight: 'bold',padding:"13px" }}>{username}</div>
+        <div style={{ color: 'white', fontSize: '24px', fontWeight: 'bold',paddingTop:"8px" }}>{username}</div>
 
       </div>
       <div className="head-right">
@@ -67,10 +67,10 @@ const Navbars = () => {
             </div>
           </Link>
         </div>
-        <div>
-          <span>
-            <IoMdNotifications />
-          </span>
+        <div className="icons2">
+          <div className="bell">
+            <IoMdNotifications/>
+          </div>
           <img className="head-pfp" src={pfp} alt="profile" />
         </div>
       </div>

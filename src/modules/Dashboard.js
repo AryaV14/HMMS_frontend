@@ -22,7 +22,7 @@ export default function Dashboard() {
         setList(data);
         
         if(data.length===0)
-          sessionStorage.setItem("username","No Name");
+          sessionStorage.setItem("username","User");
         else
           sessionStorage.setItem("username",data[0][10]);
         
