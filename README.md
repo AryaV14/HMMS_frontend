@@ -1,8 +1,8 @@
-## Hostel Mess Management System
-# Overview
+# Hostel Mess Management System
+## Overview
 This project aims to streamline hostel mess operations by providing a comprehensive management system. It consists of a React frontend for user interaction, a PSQL database for data storage, and a Flask backend built with Python to handle server-side operations.
 
-# Features
+## Features
 
 Digital Mess In and Out Register: Maintain a digital register for residents to log their mess in and out timings.
 
@@ -12,14 +12,14 @@ Automated Food Inventory Calculation: Calculate daily food requirements based on
 
 Alert Mechanism for Irregularities: Receive alerts for any discrepancies in attendance and mess in/out records.
 
-# Tech Stack
+## Tech Stack
 
 Frontend: React.js
 Backend: Flask, Python
 Database: PSQL
 Getting Started
 
-# Prerequisites
+## Prerequisites
 
 npm 
 python
@@ -27,7 +27,7 @@ pip
 flask
 psycopg2
 
-# Installation
+## Installation
 1. Clone the repository:
 
 bash
