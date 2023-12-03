@@ -1,4 +1,4 @@
-# Hostel Mess Management System
+### Hostel Mess Management System
 ## Overview
 This project aims to streamline hostel mess operations by providing a comprehensive management system. It consists of a React frontend for user interaction, a PSQL database for data storage, and a Flask backend built with Python to handle server-side operations.
 
