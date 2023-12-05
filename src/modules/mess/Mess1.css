@@ -210,7 +210,7 @@
     transform: translate(-50%, -50%);
  
   }
-  table {
+  .container table {
     width: 100%;
     height: 800px;
     border-collapse: collapse;
@@ -219,33 +219,33 @@
     background-color: hsl(0, 0%, 97%);
    
   }
-  th,
+  .container th,
   td {
     padding: 15px;
    
     color: #120101;
     
   }
-  th {
+  .container th {
     text-align: left;
    
   }
  
-  thead th {
+  .container thead th {
     background-color: #c1c7e1;
   }
-  tbody tr:hover {
+  .container tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
  
-  tbody td {
+  .container tbody td {
     
    
     position: relative;
     padding-left: 10px;
 
   }
-  tbody td:hover:before {
+  .container tbody td:hover:before {
     content: "";
     position: absolute;
     left: 0;
