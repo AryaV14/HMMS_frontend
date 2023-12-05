@@ -1,0 +1,66 @@
+/* App.css */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  /* margin: 0;
+  padding: 0; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 100vh; */
+}
+
+.menu {
+  text-align: center;
+  height: 90vh;
+  margin-top: 10%;
+}
+.header{
+  font-size: 40px;
+}
+h1 {
+  padding-bottom: 40px;
+  color: #333;
+  font-weight: bold;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+select {
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.menutable{
+  padding-left: 70px;
+  padding-bottom: 50px;
+  width: 90%;
+}
+.menutable table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+  
+}
+
+.menutable th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.menutable th {
+  background-color: #333;
+  color: white;
+}
+
+/* Responsive design */
+/* @media (max-width: 600px) {
+  table {
+    width: 100%;
+  } */
+/* } */
