@@ -23,11 +23,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    
     "eject": "react-scripts eject",
-    "build": "babel src -d lib",
+    "build": "react-scripts build",
     "test": "jest"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
