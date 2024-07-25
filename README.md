@@ -25,7 +25,9 @@ This project aims to streamline hostel mess operations by providing a comprehens
 - npm
 
 ### backend
-
+```bash
+  https://github.com/AryaV14/HMMS-backend.git
+```
 - python
 - pip
 - flask
